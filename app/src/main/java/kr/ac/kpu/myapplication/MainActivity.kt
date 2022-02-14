@@ -21,5 +21,9 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener {
             Toast.makeText(applicationContext, "버튼2가 눌렸어요", Toast.LENGTH_SHORT).show()
         }
+        button2=findViewById(R.id.button1)
+        button2.setOnClickListener {
+            Toast.makeText(applicationContext, "버튼2가 눌렸어요", Toast.LENGTH_SHORT).show()
+        }
     }
 }
