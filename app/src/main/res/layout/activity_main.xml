@@ -9,8 +9,8 @@
     
     <Button
         android:id="@+id/button1"
-        android:backgroundTint="#00FF00"
-    android:text="@string/srcBtn1"
+        android:backgroundTint="#FF0000"
+    android:text="학과:컴퓨터공학부(소프트웨어전공)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -18,14 +18,16 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF0000"
-        android:text="Button" />
+        android:backgroundTint="#00FF00"
+        android:text="이름:홍길동" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:backgroundTint="#0000FF"
+        android:text="학번:2000202020"/>
+
 
 
 </LinearLayout>
