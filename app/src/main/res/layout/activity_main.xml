@@ -9,24 +9,35 @@
     
     <Button
         android:id="@+id/button1"
-        android:backgroundTint="#FF0000"
-    android:text="학과:컴퓨터공학부(소프트웨어전공)"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFA9A9A9"
+        android:text="네이트 홈페이지 열기"
+        />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#00FF00"
-        android:text="이름:홍길동" />
+        android:backgroundTint="#FF008000"
+        android:text="911 응급전화 걸기" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#0000FF"
-        android:text="학번:2000202020"/>
+        android:backgroundTint="#FFFF0000"
+        android:text="갤러리 열기"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF00"
+        android:text="끝내기"/>
+
+
+
 
 
 
