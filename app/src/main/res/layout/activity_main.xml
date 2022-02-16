@@ -36,11 +36,15 @@
         android:backgroundTint="#FFFFFF00"
         android:text="끝내기"/>
 
-    <ImageView
-        android:id="@+id/imageView"
+    <Switch
+        android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:text="Switch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>
