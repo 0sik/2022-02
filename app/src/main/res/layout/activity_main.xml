@@ -36,9 +36,11 @@
         android:backgroundTint="#FFFFFF00"
         android:text="끝내기"/>
 
-
-
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 
 </LinearLayout>
