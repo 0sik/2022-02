@@ -35,16 +35,13 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF00"
         android:text="끝내기"/>
-
-    <Switch
-        android:id="@+id/switch1"
+    <Button
+        android:id="@+id/tt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Switch" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:background="#00ff00"
+        android:text="네이트 홈페이지 열기"
+        />
 
 
 </LinearLayout>
