@@ -9,21 +9,32 @@
 
 
     <EditText
-        android:id="@+id/Edit1"
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="" />
+    <TextView
+        android:id="@+id/state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="숫자 1"
-        />
-
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:text="" />
     <EditText
-        android:id="@+id/Edit2"
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/TextResult"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
         android:layout_margin="10dp"
-        android:hint="숫자 2"
-        />
-
+        android:text="="/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,15 +78,5 @@
         android:text="나머지"
         android:id="@+id/BtnExt"
         android:clickable="true"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TextResult"
-        android:textSize="30dp"
-        android:textColor="#FF0000"
-        android:layout_margin="10dp"
-        android:text="계산 결과 : "
         />
 </LinearLayout>

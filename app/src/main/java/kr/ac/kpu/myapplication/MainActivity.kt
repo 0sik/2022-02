@@ -1,4 +1,3 @@
-package com.cookandroid.project4_1
 
 import android.R
 import android.os.Bundle
