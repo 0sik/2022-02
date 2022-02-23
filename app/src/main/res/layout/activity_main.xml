@@ -71,5 +71,14 @@
         android:clickable="true"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="나누기"
+        android:id="@+id/BtnDiv"
+        android:clickable="true"
+        />
+
 
 </LinearLayout>
