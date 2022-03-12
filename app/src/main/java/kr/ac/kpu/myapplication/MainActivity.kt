@@ -2,11 +2,9 @@ package kr.ac.kpu.myapplication
 
 
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -19,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnSub: Button
     lateinit var btnMul: Button;
     lateinit var btnDiv: Button
+    lateinit var btnhow: Button;
     lateinit var result: TextView
     lateinit var giho: TextView
     lateinit var Num1: String;
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         btnSub = findViewById<Button>(R.id.BtnSub)
         btnMul = findViewById<Button>(R.id.BtnMul)
         btnDiv = findViewById<Button>(R.id.BtnDiv)
+        btnhow = findViewById<Button>(R.id.Btnhow)
         result = findViewById<TextView>(R.id.result)
         giho = findViewById<TextView>(R.id.giho)
 
@@ -73,6 +73,12 @@ class MainActivity : AppCompatActivity() {
             result2 = Integer.parseInt(Num1) / Integer.parseInt(Num2)
             giho.text ="/"
             result.text = "계산 결과 : " + result2.toString()
+            false
+        }
+        btnhow.setOnClickListener {
+            result.text="file-setting-Editor-General-Auto import(자동 import)//\n" +
+                    "레이아웃=LinearLayour\n" +
+                    "android.orientation=\"vertical\"(상하관계)"
             false
         }
 
