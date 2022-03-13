@@ -19,6 +19,7 @@
         android:id="@+id/ChkAgree"
         android:text="시작함"/>
     <TextView
+        android:id="@+id/Text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="좋아하는 애완동물은?"
@@ -36,12 +37,12 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/Rdocat"
+            android:id="@+id/RdoCat"
             android:text="고양이"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/Rdorabbit"
+            android:id="@+id/RdoRabbit"
             android:text="토끼"/> </RadioGroup>
     <Button
         android:layout_width="wrap_content"
