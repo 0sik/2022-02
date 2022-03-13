@@ -7,76 +7,52 @@
     android:orientation="vertical"
     >
 
-
-    <EditText
-        android:id="@+id/num1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="숫자1" />
-
     <TextView
-        android:id="@+id/giho"
-        android:layout_width="match_parent"
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="" />
+        android:text="선택을 시작하겠습니까?" />
 
-    <EditText
-        android:id="@+id/num2"
-        android:layout_width="match_parent"
+    <CheckBox
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="숫자1" />
+        android:id="@+id/ChkAgree"
+        android:text="시작함"/>
     <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="#FF0000"
-        android:text="=" />
-
+        android:text="좋아하는 애완동물은?"
+        android:visibility="invisible"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rgroup1"
+        android:visibility="invisible">
+       <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RdoDog"
+        android:text="강아지"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rdocat"
+            android:text="고양이"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rdorabbit"
+            android:text="토끼"/> </RadioGroup>
     <Button
-        android:id="@+id/BtnAdd"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="더하기"
-        />
-
-    <Button
-        android:id="@+id/BtnSub"
-        android:layout_width="match_parent"
+        android:id="@+id/Btnok"
+        android:text="선택완료"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="빼기"
-        />
-    <Button
-        android:id="@+id/BtnMul"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="곱하기"
-        />
-    <Button
-        android:id="@+id/BtnDiv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="나누기"
-        />
-    <Button
-        android:id="@+id/Btnhow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="초기설정법"
-        />
-
-
-
-
-
-
+        android:id="@+id/Imgpet"
+        android:visibility="invisible"/>
 
 </LinearLayout>
