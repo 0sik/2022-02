@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:text="선택을 시작하겠습니까?" />
 
-    <CheckBox
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ChkAgree"
+        android:id="@+id/ChkSwit"
         android:text="시작함"/>
     <TextView
         android:id="@+id/Text2"
@@ -44,22 +44,22 @@
             android:layout_height="wrap_content"
             android:id="@+id/RdoRabbit"
             android:text="토끼"/> </RadioGroup>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Btnok"
-        android:text="선택완료"
-        android:visibility="invisible"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Imgpet"
         android:visibility="invisible"/>
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch" />
-
+        android:id="@+id/finish"
+        android:text="종료"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:text="처음으로"
+        android:visibility="invisible"/>
 </LinearLayout>
