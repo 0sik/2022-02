@@ -51,9 +51,23 @@ class MainActivity : AppCompatActivity() {
                 imgpet.visibility = android.view.View.INVISIBLE
             }
             finish.setOnClickListener { finish() }
-            first.setOnClickListener { chkswit.setChecked(false) }
+            first.setOnClickListener {
+                chkswit.setChecked(false)
+                text2.visibility = android.view.View.INVISIBLE
+                rGroup1.visibility = android.view.View.INVISIBLE
+                first.visibility = android.view.View.INVISIBLE
+                finish.visibility = android.view.View.INVISIBLE
+                imgpet.visibility = android.view.View.INVISIBLE
+            }
 
-            rGroup1.setOnCheckedChangeListener(){
+            rGroup1.setOnCheckedChangeListener { radioGroup, i ->
+                when(rGroup1.checkedRadioButtonId){
+                    R.id.RdoDog->imgpet.setImageResource(R.drawable.dog)
+                    R.id.RdoCat->imgpet.setImageResource(R.drawable.cat)
+                    R.id.RdoRabbit->imgpet.setImageResource(R.drawable.rabbit)
+                    else -> Toast.makeText(applicationContext,"동물 먼저 선택하세요",Toast.LENGTH_SHORT).show()
+                }
+            }
 
 
 
