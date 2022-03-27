@@ -1,50 +1,69 @@
 package kr.ac.kpu.myapplication
 
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+    var number1 = 0
+    var number2 = 0
+    var operator: Button? = null
 
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
-        var params = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.MATCH_PARENT
-        )
-        val baseLayout = LinearLayout(this)
-        baseLayout.orientation = LinearLayout.VERTICAL
-        setContentView(baseLayout , params)
+        setContentView(R.layout.activity_main)
 
-        var edit = EditText(this)
-        baseLayout.addView(edit)
-        edit.hint = "입력하세요"
-        var btn = Button(this)
-        btn.text = "버튼입니다"
-        btn.setBackgroundColor(Color.YELLOW)
-        baseLayout.addView(btn)
-        var text1 =TextView(this)
-        baseLayout.addView(text1)
-        text1.text =""
+        var numButtons = arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
 
-        btn.setOnClickListener {
-           var str = edit.text.toString()
-            text1.setText(str)
-
+        btnPlus.setOnClickListener {
+            number1 = if (result.text.isEmpty()) 0 else result.text.toString().toInt()
+            result.text = ""
+            operator = btnPlus
+        }
+        btnMinus.setOnClickListener {
+            number1 = if (result.text.isEmpty()) 0 else result.text.toString().toInt()
+            result.text = ""
+            operator = btnMinus
+        }
+        btnMul.setOnClickListener {
+            number1 = if (result.text.isEmpty()) 0 else result.text.toString().toInt()
+            result.text = ""
+            operator = btnMul
+        }
+        btnDiv.setOnClickListener {
+            number1 = if (result.text.isEmpty()) 0 else result.text.toString().toInt()
+            result.text = ""
+            operator = btnDiv
+        }
+        btnClear.setOnClickListener {
+            result.text = ""
+            operator = null
+        }
+        btnEqual.setOnClickListener {
+            number2 = if (result.text.isEmpty()) 0 else result.text.toString().toInt()
+            when (operator) {
+                btnPlus -> result.text =
+                    "${number1} ${operator?.text} ${number2} = ${number1 + number2}"
+                btnMinus -> result.text =
+                    "${number1} ${operator?.text} ${number2} = ${number1 - number2}"
+                btnMul -> result.text =
+                    "${number1} ${operator?.text} ${number2} = ${number1 * number2}"
+                btnDiv -> result.text =
+                    "${number1} ${operator?.text} ${number2} = ${number1 / number2}"
+                null -> Toast.makeText(applicationContext, "숫자와 연산자를 선택하시오", Toast.LENGTH_SHORT)
+                    .show()
+            }
         }
 
-
+        for (btn in numButtons) {
+            btn.setOnClickListener {
+                result.text = result.text.toString() + btn.text.toString()
+            }
+        }
     }
 }
-
-
